@@ -7,3 +7,15 @@
 ---- it'll downloadand isntall teh dependencies. http://i.imgur.com/ydTt2Xx.jpg
 ------- >> trying http://localhost/laravel-learning/public or http://laravel.dev/ should now show the default laravel page.
 -*-- www.packagist.org has a lot of dependencies/libraries that u can add to the requirements list in composer.json
+5- Setup the secret app key in app/config/app.php by running the command
+   "./artisan key:generate" in cmdprmpt or shell. http://i.imgur.com/CrG0TNq.jpg
+
+6- DIVING INTO DEVELOPMENT
+-- in routes.php add > Route::get('/','HomeController@index'); 
+---this'll point to the HomeController.php wher eyou can output page elements for now
+7- in HomeController.php add this page elemnts
+  public function index()
+	{
+		var_dump('hello from laravel 4 abbas!');
+	}
+and now refresh in browser to view the page with hte string message
