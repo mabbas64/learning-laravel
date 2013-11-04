@@ -1,0 +1,9 @@
+1- extract laravel4 files in /htdocs
+2- setup apache virutal hosts and windows hosts so 'laravel.dev' points to /htdocs/laravel/public etc
+3- install composer to get rid of the errors.
+---- getcomposer.org > getting started guide.
+------- install windows verison composer-setup.exe. allows calling 'composer' from any commandprompt dir
+4- With composer installed, in cmdprmt / terminal opened at the htdocs/Laravel site directory, do "composer install"
+---- it'll downloadand isntall teh dependencies. http://i.imgur.com/ydTt2Xx.jpg
+------- >> trying http://localhost/laravel-learning/public or http://laravel.dev/ should now show the default laravel page.
+-*-- www.packagist.org has a lot of dependencies/libraries that u can add to the requirements list in composer.json
